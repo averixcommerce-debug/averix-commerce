@@ -60,13 +60,13 @@ export default function Footer() {
           {/* Services */}
           <div>
             <h4 className="text-sm font-bold tracking-widest text-gold-500 uppercase mb-5">
-              Dịch vụ
+              Năng lực cốt lõi
             </h4>
             <ul className="space-y-3">
               {services.map((s) => (
                 <li key={s}>
                   <Link
-                    href="/services"
+                    href="/capabilities"
                     className="text-base text-white/55 hover:text-gold-400 transition-colors duration-200 flex items-center gap-2 group"
                   >
                     <span className="w-1 h-1 rounded-full bg-gold-700 group-hover:bg-gold-400 transition-colors duration-200" />
