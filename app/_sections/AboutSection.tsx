@@ -34,9 +34,9 @@ const meanings = [
   },
   {
     icon: Target,
-    letter: 'Mission',
-    title: 'Sứ Mệnh',
-    desc: 'Biến ý tưởng thành sản phẩm có giá trị thật trên thị trường Mỹ.',
+    letter: 'Value',
+    title: 'Giá Trị Thật',
+    desc: 'Biến ý tưởng thành sản phẩm có giá trị thật bằng năng lực thực thi và dữ liệu.',
     iconBg: 'rgba(52,211,153,0.13)',
     iconBorder: 'rgba(52,211,153,0.4)',
     iconColor: '#34d399',
@@ -65,14 +65,11 @@ export default function AboutSection() {
             — Về Averix Commerce —
           </span>
           <h2 className="text-4xl md:text-6xl font-black font-display text-gold-gradient mb-6">
-            Hơn 5 Năm<br />
-            <span className="text-white">Kinh Nghiệm POD US</span>
+            Kinh Nghiệm<br />
+            <span className="text-white">Thực Chiến POD US</span>
           </h2>
-          <p className="max-w-2xl mx-auto text-white/55 text-base md:text-lg leading-relaxed">
-            Averix Commerce là công ty thương mại điện tử chuyên phát triển các sản phẩm
-            cá nhân hóa theo mô hình POD cho thị trường Mỹ. Chúng tôi kết hợp sáng tạo,
-            dữ liệu và năng lực vận hành để xây dựng các thương hiệu commerce
-            có giá trị thực và khả năng mở rộng.
+          <p className="max-w-3xl mx-auto text-white/55 text-base md:text-lg leading-relaxed">
+            Averix Commerce được xây dựng từ kinh nghiệm thực chiến trong lĩnh vực Print-on-Demand tại thị trường Mỹ. Chúng tôi hiểu rằng một sản phẩm POD thành công không chỉ cần thiết kế đẹp. Sản phẩm đó cần đúng insight khách hàng, đúng niche, đúng thông điệp, đúng thời điểm và được triển khai bằng một hệ thống vận hành hiệu quả.
           </p>
         </ScrollReveal>
 

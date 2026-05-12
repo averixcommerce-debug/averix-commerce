@@ -3,7 +3,7 @@ import AboutSection from '../_sections/AboutSection';
 import StatsSection from '../_sections/StatsSection';
 import ScrollReveal from '../_components/ScrollReveal';
 import GlowCard from '../_components/GlowCard';
-import { Eye, Heart, Lightbulb } from 'lucide-react';
+import { Target, Zap, BarChart3, Rocket, Heart } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Về Chúng Tôi — Averix Commerce',
@@ -13,19 +13,29 @@ export const metadata: Metadata = {
 
 const values = [
   {
-    icon: Eye,
-    title: 'Data-Driven',
-    desc: 'Mọi quyết định đều dựa trên dữ liệu. Chúng tôi không đoán mò — chúng tôi đo lường, phân tích và hành động.',
+    icon: Target,
+    title: 'Apex Standard',
+    desc: 'Theo đuổi tiêu chuẩn cao trong từng sản phẩm, từng thiết kế và từng quy trình làm việc.',
   },
   {
-    icon: Lightbulb,
-    title: 'Creative First',
-    desc: 'Sáng tạo là nền tảng. Chúng tôi không chạy theo trend — chúng tôi tạo ra sản phẩm có linh hồn.',
+    icon: Zap,
+    title: 'X Factor',
+    desc: 'Tìm kiếm sự khác biệt để sản phẩm có lý do được khách hàng lựa chọn.',
+  },
+  {
+    icon: BarChart3,
+    title: 'Data-driven Thinking',
+    desc: 'Ra quyết định dựa trên dữ liệu, không chỉ dựa vào cảm tính.',
+  },
+  {
+    icon: Rocket,
+    title: 'Execution Matters',
+    desc: 'Ý tưởng chỉ có giá trị khi được thực thi tốt, đúng tiến độ và đúng tiêu chuẩn.',
   },
   {
     icon: Heart,
-    title: 'Client Success',
-    desc: 'Thành công của client là thành công của chúng tôi. Chúng tôi cam kết với kết quả, không chỉ với effort.',
+    title: 'Real Value',
+    desc: 'Tạo ra sản phẩm có giá trị thật cho khách hàng và thị trường.',
   },
 ];
 
@@ -43,12 +53,11 @@ export default function AboutPage() {
               — Về Averix Commerce —
             </span>
             <h1 className="text-5xl md:text-7xl font-black font-display mb-6">
-              <span className="text-white">Apex meets</span><br />
-              <span className="text-gold-gradient">The X Factor</span>
+              <span className="text-white">Kiến Tạo</span><br />
+              <span className="text-gold-gradient">Giá Trị Thật</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
-              Averix không phải một cái tên có sẵn trong từ điển — bởi vì chúng tôi
-              không xây dựng công ty này để đi theo những định nghĩa cũ.
+            <p className="text-lg md:text-xl text-white/60 max-w-3xl mx-auto leading-relaxed">
+              Từ nền tảng Merch by Amazon đến mô hình Shopify kết hợp quảng cáo, Averix Commerce tập trung phát triển các sản phẩm cá nhân hóa có tính thương mại cao, phục vụ khách hàng tại thị trường US và hướng đến khả năng mở rộng dài hạn.
             </p>
           </ScrollReveal>
         </div>

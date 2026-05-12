@@ -7,19 +7,19 @@ import GoldButton from '../_components/GoldButton';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
 
 const contactInfo = [
-  { icon: Mail, label: 'Email', value: 'contact@averixcommerce.com', href: 'mailto:contact@averixcommerce.com' },
-  { icon: Phone, label: 'Hotline', value: '+84 xxx xxx xxx', href: 'tel:+84000000000' },
+  { icon: Mail, label: 'Email', value: 'averix.commerce@gmail.com', href: 'mailto:averix.commerce@gmail.com' },
+  { icon: Phone, label: 'Hotline', value: '0916.500.026', href: 'tel:0916500026' },
   { icon: MapPin, label: 'Location', value: 'Vietnam · US Market', href: '#' },
 ];
 
 const services = [
-  'POD Store Development',
-  'Amazon Marketplace',
-  'Product Design & POD',
-  'Growth Analytics',
+  'Tư vấn & Phát triển sản phẩm',
+  'Thiết kế POD & Personalization',
+  'Shopify Store Development',
+  'Amazon Marketplace & FBA',
   'Brand Identity',
-  'Tư vấn chiến lược',
-  'Khác',
+  'Ứng tuyển việc làm',
+  'Hợp tác khác',
 ];
 
 export default function ContactPage() {
@@ -181,7 +181,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <label htmlFor="service" className="block text-xs font-semibold text-gold-600 uppercase tracking-wide mb-2">
-                          Dịch vụ quan tâm *
+                          Mục đích liên hệ *
                         </label>
                         <select
                           id="service" name="service" required
@@ -189,28 +189,10 @@ export default function ContactPage() {
                           className="w-full px-4 py-3 rounded-xl bg-dark-800 border border-gold-700/25 text-white text-sm
                             focus:outline-none focus:border-gold-500/60 transition-all duration-300 appearance-none"
                         >
-                          <option value="" disabled>Chọn dịch vụ...</option>
+                          <option value="" disabled>Chọn mục đích liên hệ...</option>
                           {services.map((s) => <option key={s} value={s}>{s}</option>)}
                         </select>
                       </div>
-                    </div>
-
-                    <div>
-                      <label htmlFor="budget" className="block text-xs font-semibold text-gold-600 uppercase tracking-wide mb-2">
-                        Budget dự kiến
-                      </label>
-                      <select
-                        id="budget" name="budget"
-                        value={form.budget} onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl bg-dark-800 border border-gold-700/25 text-white text-sm
-                          focus:outline-none focus:border-gold-500/60 transition-all duration-300 appearance-none"
-                      >
-                        <option value="">Chọn budget...</option>
-                        <option>Dưới $1,000</option>
-                        <option>$1,000 - $3,000</option>
-                        <option>$3,000 - $10,000</option>
-                        <option>$10,000+</option>
-                      </select>
                     </div>
 
                     <div>

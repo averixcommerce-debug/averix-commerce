@@ -3,12 +3,12 @@ import AXLogo from './AXLogo';
 import { Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
 
 const services = [
-  'POD Store Development',
-  'Product Design & POD',
-  'Amazon Marketplace',
-  'Growth Analytics',
-  'Brand Identity',
-  'Operations & Scale',
+  'Product Research',
+  'Creative Direction',
+  'POD Design',
+  'Personalization',
+  'Shopify Listing & Operation',
+  'Data-driven Optimization',
 ];
 
 const socialLinks = [
@@ -42,8 +42,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-base text-white/55 leading-relaxed mb-5">
-              Nơi khát vọng tạo nên <span className="text-gold-500 font-semibold">GIÁ TRỊ</span>,
-              dữ liệu dẫn lối <span className="text-gold-500 font-semibold">TĂNG TRƯỞNG</span>.
+              Averix Commerce là công ty thương mại điện tử chuyên phát triển sản phẩm POD cá nhân hóa cho thị trường Mỹ, hoạt động trên Merch by Amazon và Shopify. Creativity. Data. Execution.
             </p>
             {/* Platform badges */}
             <div className="flex flex-wrap gap-2">
@@ -87,7 +86,10 @@ export default function Footer() {
               {[
                 { label: 'Trang chủ', href: '/' },
                 { label: 'Về chúng tôi', href: '/about' },
-                { label: 'Dịch vụ', href: '/services' },
+                { label: 'Năng lực cốt lõi', href: '/capabilities' },
+                { label: 'Quy trình vận hành', href: '/process' },
+                { label: 'Văn hóa Averix', href: '/culture' },
+                { label: 'Tuyển dụng', href: '/careers' },
                 { label: 'Liên hệ', href: '/contact' },
               ].map((link) => (
                 <li key={link.href}>
@@ -111,20 +113,20 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="mailto:contact@averixcommerce.com"
+                  href="mailto:averix.commerce@gmail.com"
                   className="flex items-start gap-3 text-base text-white/55 hover:text-gold-400 transition-colors duration-200 group"
                 >
                   <Mail size={16} className="mt-0.5 shrink-0 text-gold-600 group-hover:text-gold-400 transition-colors" />
-                  contact@averixcommerce.com
+                  averix.commerce@gmail.com
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+84000000000"
+                  href="tel:0916500026"
                   className="flex items-start gap-3 text-base text-white/55 hover:text-gold-400 transition-colors duration-200 group"
                 >
                   <Phone size={16} className="mt-0.5 shrink-0 text-gold-600 group-hover:text-gold-400 transition-colors" />
-                  +84 xxx xxx xxx
+                  0916.500.026
                 </a>
               </li>
               <li>

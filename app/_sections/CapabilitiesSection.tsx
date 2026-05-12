@@ -2,14 +2,14 @@
 
 import ScrollReveal from '../_components/ScrollReveal';
 import GlowCard from '../_components/GlowCard';
-import { ShoppingBag, Palette, Globe, BarChart3, Layers, Rocket } from 'lucide-react';
+import { ShoppingBag, Palette, Search, BarChart3, Compass, UserCircle } from 'lucide-react';
 
-const services = [
+const capabilities = [
   {
-    icon: ShoppingBag,
-    title: 'POD Store Development',
-    desc: 'Xây dựng Shopify store POD từ đầu — từ thiết kế, cấu hình sản phẩm đến tối ưu conversion rate.',
-    tags: ['Shopify', 'POD', 'CRO'],
+    icon: Search,
+    title: 'Product Research',
+    desc: 'Chúng tôi nghiên cứu niche, trend, keyword, hành vi mua hàng và insight khách hàng tại thị trường US để tìm ra các cơ hội sản phẩm tiềm năng.',
+    tags: ['Niche', 'Trend', 'Insight'],
     iconBg: 'rgba(255,215,0,0.15)',
     iconBorder: 'rgba(218,165,32,0.4)',
     iconColor: '#ffd700',
@@ -17,10 +17,10 @@ const services = [
     accentTo: '#ffd700',
   },
   {
-    icon: Palette,
-    title: 'Product Design & Personalization',
-    desc: 'Thiết kế sản phẩm cá nhân hóa độc đáo — từ concept đến artwork ready cho các nền tảng in ấn.',
-    tags: ['Design', 'Customily', 'Printify'],
+    icon: Compass,
+    title: 'Creative Direction',
+    desc: 'Mỗi sản phẩm được phát triển với định hướng rõ ràng: bán cho ai, mua vì lý do gì, cảm xúc nào cần được kích hoạt và thông điệp nào đủ mạnh để tạo chuyển đổi.',
+    tags: ['Concept', 'Message', 'Emotion'],
     iconBg: 'rgba(251,191,36,0.15)',
     iconBorder: 'rgba(251,191,36,0.4)',
     iconColor: '#fbbf24',
@@ -28,10 +28,10 @@ const services = [
     accentTo: '#fbbf24',
   },
   {
-    icon: Globe,
-    title: 'Amazon Marketplace',
-    desc: 'Tối ưu listing, A+ Content, PPC campaigns và brand registry để dominate thị trường Amazon US.',
-    tags: ['Amazon', 'FBA', 'PPC'],
+    icon: Palette,
+    title: 'POD Design',
+    desc: 'Đội ngũ thiết kế của Averix Commerce tạo ra artwork phù hợp với thị trường, sản phẩm, nền tảng bán hàng và hành vi mua hàng của khách hàng Mỹ.',
+    tags: ['Artwork', 'Design', 'Platform'],
     iconBg: 'rgba(251,146,60,0.15)',
     iconBorder: 'rgba(251,146,60,0.4)',
     iconColor: '#fb923c',
@@ -39,10 +39,10 @@ const services = [
     accentTo: '#fbbf24',
   },
   {
-    icon: BarChart3,
-    title: 'Growth Analytics',
-    desc: 'Data-driven insights — theo dõi traffic, conversion, revenue và đưa ra chiến lược tối ưu.',
-    tags: ['Analytics', 'Data', 'Growth'],
+    icon: UserCircle,
+    title: 'Personalization',
+    desc: 'Cá nhân hóa là một phần quan trọng trong chiến lược sản phẩm. Chúng tôi phát triển các sản phẩm cho phép khách hàng thêm tên, hình ảnh, vai trò hoặc thông điệp riêng.',
+    tags: ['Custom', 'Name', 'Photo'],
     iconBg: 'rgba(52,211,153,0.12)',
     iconBorder: 'rgba(52,211,153,0.35)',
     iconColor: '#34d399',
@@ -50,10 +50,10 @@ const services = [
     accentTo: '#34d399',
   },
   {
-    icon: Layers,
-    title: 'Brand Identity',
-    desc: 'Xây dựng thương hiệu có hồn — từ naming, logo, visual identity đến brand story.',
-    tags: ['Branding', 'Design', 'Strategy'],
+    icon: ShoppingBag,
+    title: 'Shopify Listing & Operation',
+    desc: 'Chúng tôi xây dựng nội dung sản phẩm, hình ảnh mockup, mô tả, tag, personalization setup và quy trình vận hành để sản phẩm sẵn sàng bán hàng.',
+    tags: ['Listing', 'Mockup', 'Operation'],
     iconBg: 'rgba(167,139,250,0.15)',
     iconBorder: 'rgba(167,139,250,0.4)',
     iconColor: '#a78bfa',
@@ -61,10 +61,10 @@ const services = [
     accentTo: '#c4b5fd',
   },
   {
-    icon: Rocket,
-    title: 'Operations & Scale',
-    desc: 'Hệ thống vận hành tự động hóa — fulfillment, customer service, scaling playbook.',
-    tags: ['Automation', 'Scale', 'Operations'],
+    icon: BarChart3,
+    title: 'Data-driven Optimization',
+    desc: 'Averix Commerce sử dụng dữ liệu để đánh giá sản phẩm, tối ưu ý tưởng, thiết kế, listing và hiệu quả kinh doanh.',
+    tags: ['Data', 'Optimize', 'Scaling'],
     iconBg: 'rgba(56,189,248,0.12)',
     iconBorder: 'rgba(56,189,248,0.35)',
     iconColor: '#38bdf8',
@@ -73,9 +73,9 @@ const services = [
   },
 ];
 
-export default function ServicesSection() {
+export default function CapabilitiesSection() {
   return (
-    <section id="services" className="relative section-padding bg-dark-900 overflow-hidden">
+    <section id="capabilities" className="relative section-padding bg-dark-900 overflow-hidden">
       <div className="absolute inset-0 grid-pattern opacity-30 pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(ellipse, rgba(184,134,11,0.06) 0%, transparent 70%)' }} />
@@ -84,21 +84,20 @@ export default function ServicesSection() {
         {/* Header */}
         <ScrollReveal className="text-center mb-16">
           <span className="inline-block text-xs font-bold tracking-[0.3em] text-gold-600 uppercase mb-4">
-            — Dịch Vụ —
+            — Năng Lực Cốt Lõi —
           </span>
           <h2 className="text-4xl md:text-6xl font-black font-display mb-6">
-            <span className="text-white">Giải Pháp </span>
-            <span className="text-gold-gradient">Toàn Diện</span>
+            <span className="text-white">Toàn Diện </span>
+            <span className="text-gold-gradient">Mọi Khía Cạnh</span>
           </h2>
           <p className="max-w-xl mx-auto text-white/50 text-lg leading-relaxed">
-            Từ ý tưởng đến thương hiệu hoàn chỉnh — chúng tôi đồng hành cùng bạn
-            trên toàn bộ hành trình xây dựng commerce.
+            Từ nghiên cứu, sáng tạo đến vận hành và tối ưu — chúng tôi sở hữu năng lực toàn diện để phát triển thương hiệu.
           </p>
         </ScrollReveal>
 
-        {/* Services Grid */}
+        {/* Capabilities Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {services.map((svc, i) => {
+          {capabilities.map((svc, i) => {
             const Icon = svc.icon;
             return (
               <ScrollReveal key={svc.title} delay={i * 0.08} direction="up">
@@ -153,9 +152,9 @@ export default function ServicesSection() {
 
         {/* CTA */}
         <ScrollReveal delay={0.4} className="text-center mt-12">
-          <a href="/services"
+          <a href="/capabilities"
             className="inline-flex items-center gap-2 text-gold-500 hover:text-gold-300 font-semibold text-sm transition-colors group">
-            Xem tất cả dịch vụ
+            Xem tất cả năng lực cốt lõi
             <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
           </a>
         </ScrollReveal>

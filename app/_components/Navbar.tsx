@@ -9,7 +9,10 @@ import AXLogo from './AXLogo';
 const navLinks = [
   { href: '/', label: 'Trang chủ' },
   { href: '/about', label: 'Về chúng tôi' },
-  { href: '/services', label: 'Dịch vụ' },
+  { href: '/capabilities', label: 'Năng lực cốt lõi' },
+  { href: '/process', label: 'Quy trình vận hành' },
+  { href: '/culture', label: 'Văn hóa Averix' },
+  { href: '/careers', label: 'Tuyển dụng' },
   { href: '/contact', label: 'Liên hệ' },
 ];
 

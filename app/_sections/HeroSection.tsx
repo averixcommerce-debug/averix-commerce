@@ -103,12 +103,11 @@ export default function HeroSection() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="text-5xl md:text-7xl lg:text-8xl font-black font-display leading-[0.9] mb-6 tracking-tight"
         >
-          <span className="block text-white">Xây Dựng</span>
-          <span className="block text-gold-gradient animate-glow-text">
-            Thương Hiệu
+          <span className="block text-white uppercase tracking-wider text-4xl md:text-6xl mb-4">AVERIX COMMERCE</span>
+          <span className="block text-gold-gradient animate-glow-text text-3xl md:text-5xl lg:text-6xl">
+            Personalized POD Brands
           </span>
-          <span className="block text-white">Commerce</span>
-          <span className="block text-gold-gradient-light">Có Giá Trị Thực</span>
+          <span className="block text-white text-3xl md:text-5xl lg:text-6xl">for the US Market</span>
         </motion.h1>
 
         {/* Sub text */}
@@ -116,13 +115,10 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="text-lg md:text-xl text-white/55 max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-base md:text-lg text-white/70 max-w-3xl mx-auto mb-10 leading-relaxed"
         >
-          Averix Commerce kết hợp{' '}
-          <span className="text-gold-400 font-medium">sáng tạo</span>,{' '}
-          <span className="text-gold-400 font-medium">dữ liệu</span> và{' '}
-          <span className="text-gold-400 font-medium">năng lực vận hành</span>{' '}
-          để xây dựng các thương hiệu commerce có giá trị thực và khả năng mở rộng trên thị trường Mỹ.
+          Averix Commerce là công ty thương mại điện tử chuyên phát triển sản phẩm POD cá nhân hóa cho thị trường Mỹ.
+          Với hơn 5 năm kinh nghiệm, chúng tôi kết hợp <span className="text-gold-400 font-medium">sáng tạo</span>, <span className="text-gold-400 font-medium">dữ liệu</span> và <span className="text-gold-400 font-medium">năng lực vận hành</span> để xây dựng các sản phẩm có giá trị thực, phù hợp với nhu cầu khách hàng và có khả năng mở rộng.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -132,8 +128,8 @@ export default function HeroSection() {
           transition={{ delay: 0.8, duration: 0.6 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <GoldButton href="/services" size="lg">
-            Khám phá dịch vụ →
+          <GoldButton href="/capabilities" size="lg">
+            Năng lực cốt lõi →
           </GoldButton>
           <GoldButton href="/about" variant="outline" size="lg">
             Về Averix Commerce
@@ -148,10 +144,9 @@ export default function HeroSection() {
           className="flex flex-wrap justify-center gap-3 mt-12"
         >
           {[
-            { label: '⚡ Shopify Expert', color: 'border-green-500/30 text-green-400' },
-            { label: '📦 Amazon FBA/POD', color: 'border-orange-500/30 text-orange-400' },
-            { label: '🎯 Growth Analytics', color: 'border-gold-600/40 text-gold-400' },
-            { label: '✨ Brand Identity', color: 'border-purple-500/30 text-purple-400' },
+            { label: 'Creativity', color: 'border-gold-500/30 text-gold-400' },
+            { label: 'Data', color: 'border-gold-500/30 text-gold-400' },
+            { label: 'Execution', color: 'border-gold-500/30 text-gold-400' },
           ].map((b) => (
             <span
               key={b.label}
