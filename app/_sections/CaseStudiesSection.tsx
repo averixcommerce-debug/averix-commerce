@@ -67,7 +67,7 @@ export default function CaseStudiesSection() {
             <span className="text-white">Kết Quả </span>
             <span className="text-gold-gradient">Thực Tế</span>
           </h2>
-          <p className="max-w-xl mx-auto text-muted text-base">
+          <p className="max-w-xl mx-auto text-white/50 text-lg">
             Những thương hiệu chúng tôi đã xây dựng và kết quả đo lường được.
           </p>
         </ScrollReveal>
@@ -104,14 +104,14 @@ export default function CaseStudiesSection() {
                       </div>
                     </div>
 
-                    <p className="text-sm text-muted leading-relaxed mb-6">{c.desc}</p>
+                    <p className="text-[15px] text-white/50 leading-relaxed mb-6">{c.desc}</p>
 
                     {/* Metrics */}
                     <div className="space-y-3 mb-6 p-4 rounded-xl bg-dark-950/60 border border-gold-700/15">
                       {c.metrics.map((m) => (
                         <div key={m.label} className="flex items-center justify-between">
-                          <span className="text-xs text-muted">{m.label}</span>
-                          <span className="text-sm font-bold text-gold-400">{m.value}</span>
+                          <span className="text-sm text-white/45">{m.label}</span>
+                          <span className="text-base font-bold text-gold-400">{m.value}</span>
                         </div>
                       ))}
                     </div>
@@ -119,7 +119,7 @@ export default function CaseStudiesSection() {
                     {/* Tags */}
                     <div className="flex flex-wrap gap-1.5">
                       {c.tags.map((tag) => (
-                        <span key={tag} className="px-2.5 py-1 rounded-md text-xs font-medium bg-gold-500/8 text-gold-600 border border-gold-700/20">
+                        <span key={tag} className="px-2.5 py-1 rounded-md text-sm font-medium bg-gold-500/8 text-gold-600 border border-gold-700/20">
                           {tag}
                         </span>
                       ))}

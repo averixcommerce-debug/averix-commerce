@@ -88,7 +88,7 @@ export default function TestimonialsSection() {
               </div>
 
               {/* Quote */}
-              <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8 italic max-w-2xl mx-auto">
+              <p className="text-xl md:text-2xl text-white/90 leading-relaxed mb-8 italic max-w-2xl mx-auto">
                 &ldquo;{t.quote}&rdquo;
               </p>
 
@@ -104,8 +104,8 @@ export default function TestimonialsSection() {
                   {t.avatar}
                 </div>
                 <div className="text-left">
-                  <p className="font-bold text-white">{t.name}</p>
-                  <p className="text-sm text-muted">{t.role}</p>
+                  <p className="text-lg font-bold text-white">{t.name}</p>
+                  <p className="text-base text-white/50">{t.role}</p>
                 </div>
               </div>
             </motion.div>

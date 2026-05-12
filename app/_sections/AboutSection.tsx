@@ -68,7 +68,7 @@ export default function AboutSection() {
             Hơn 5 Năm<br />
             <span className="text-white">Kinh Nghiệm POD US</span>
           </h2>
-          <p className="max-w-2xl mx-auto text-muted text-base md:text-lg leading-relaxed">
+          <p className="max-w-2xl mx-auto text-white/55 text-base md:text-lg leading-relaxed">
             Averix Commerce là công ty thương mại điện tử chuyên phát triển các sản phẩm
             cá nhân hóa theo mô hình POD cho thị trường Mỹ. Chúng tôi kết hợp sáng tạo,
             dữ liệu và năng lực vận hành để xây dựng các thương hiệu commerce
@@ -82,7 +82,7 @@ export default function AboutSection() {
           <div>
             <ScrollReveal direction="left">
               <h3 className="text-2xl font-bold font-display text-gold-gradient mb-2">Ý Nghĩa Tên Công Ty</h3>
-              <p className="text-sm text-muted mb-8">
+              <p className="text-base text-white/55 mb-8">
                 Averix không phải một cái tên có sẵn trong từ điển —
                 bởi vì chúng tôi không xây dựng công ty này để đi theo những định nghĩa cũ.
               </p>
@@ -107,7 +107,7 @@ export default function AboutSection() {
                           <span className="text-xs font-bold text-gold-600 font-mono">{m.letter}</span>
                           <h4 className="text-sm font-bold text-white">{m.title}</h4>
                         </div>
-                        <p className="text-xs text-muted leading-relaxed">{m.desc}</p>
+                        <p className="text-[15px] text-white/50 leading-relaxed">{m.desc}</p>
                       </div>
                     </div>
                   </ScrollReveal>
@@ -161,7 +161,7 @@ export default function AboutSection() {
                         {item.year}
                       </span>
                       <h4 className="text-base font-bold text-white mb-1">{item.title}</h4>
-                      <p className="text-sm text-muted">{item.desc}</p>
+                      <p className="text-base text-white/50">{item.desc}</p>
                     </div>
                   </motion.div>
                 ))}
@@ -175,7 +175,7 @@ export default function AboutSection() {
                 transition={{ delay: 0.8 }}
                 className="mt-8 p-5 rounded-xl glass border border-gold-700/30 text-center"
               >
-                <p className="text-sm text-muted italic">
+                <p className="text-base text-white/60 italic">
                   &ldquo;Nơi khát vọng tạo nên{' '}
                   <span className="text-gold-400 font-bold not-italic">GIÁ TRỊ</span>,
                   dữ liệu dẫn lối{' '}

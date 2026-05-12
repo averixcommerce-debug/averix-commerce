@@ -90,7 +90,7 @@ export default function ServicesSection() {
             <span className="text-white">Giải Pháp </span>
             <span className="text-gold-gradient">Toàn Diện</span>
           </h2>
-          <p className="max-w-xl mx-auto text-white/50 text-base leading-relaxed">
+          <p className="max-w-xl mx-auto text-white/50 text-lg leading-relaxed">
             Từ ý tưởng đến thương hiệu hoàn chỉnh — chúng tôi đồng hành cùng bạn
             trên toàn bộ hành trình xây dựng commerce.
           </p>
@@ -120,18 +120,18 @@ export default function ServicesSection() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-[15px] font-bold text-white mb-2.5 font-display leading-snug">
+                  <h3 className="text-base font-bold text-white mb-3 font-display leading-snug">
                     {svc.title}
                   </h3>
 
                   {/* Desc */}
-                  <p className="text-sm text-white/45 leading-relaxed mb-5">{svc.desc}</p>
+                  <p className="text-[15px] text-white/45 leading-relaxed mb-5">{svc.desc}</p>
 
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2">
                     {svc.tags.map((tag) => (
                       <span key={tag}
-                        className="px-3 py-1 rounded-full text-xs font-semibold"
+                        className="px-3 py-1 rounded-full text-sm font-semibold"
                         style={{
                           background: 'rgba(255,215,0,0.07)',
                           border: '1px solid rgba(184,134,11,0.3)',

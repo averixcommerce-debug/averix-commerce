@@ -41,7 +41,7 @@ export default function Footer() {
                 </span>
               </div>
             </Link>
-            <p className="text-sm text-muted leading-relaxed mb-5">
+            <p className="text-base text-white/55 leading-relaxed mb-5">
               Nơi khát vọng tạo nên <span className="text-gold-500 font-semibold">GIÁ TRỊ</span>,
               dữ liệu dẫn lối <span className="text-gold-500 font-semibold">TĂNG TRƯỞNG</span>.
             </p>
@@ -68,7 +68,7 @@ export default function Footer() {
                 <li key={s}>
                   <Link
                     href="/services"
-                    className="text-sm text-muted hover:text-gold-400 transition-colors duration-200 flex items-center gap-2 group"
+                    className="text-base text-white/55 hover:text-gold-400 transition-colors duration-200 flex items-center gap-2 group"
                   >
                     <span className="w-1 h-1 rounded-full bg-gold-700 group-hover:bg-gold-400 transition-colors duration-200" />
                     {s}
@@ -93,7 +93,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-muted hover:text-gold-400 transition-colors duration-200 flex items-center gap-2 group"
+                    className="text-base text-white/55 hover:text-gold-400 transition-colors duration-200 flex items-center gap-2 group"
                   >
                     <span className="w-1 h-1 rounded-full bg-gold-700 group-hover:bg-gold-400 transition-colors duration-200" />
                     {link.label}
@@ -112,7 +112,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:contact@averixcommerce.com"
-                  className="flex items-start gap-3 text-sm text-muted hover:text-gold-400 transition-colors duration-200 group"
+                  className="flex items-start gap-3 text-base text-white/55 hover:text-gold-400 transition-colors duration-200 group"
                 >
                   <Mail size={16} className="mt-0.5 shrink-0 text-gold-600 group-hover:text-gold-400 transition-colors" />
                   contact@averixcommerce.com
@@ -121,14 +121,14 @@ export default function Footer() {
               <li>
                 <a
                   href="tel:+84000000000"
-                  className="flex items-start gap-3 text-sm text-muted hover:text-gold-400 transition-colors duration-200 group"
+                  className="flex items-start gap-3 text-base text-white/55 hover:text-gold-400 transition-colors duration-200 group"
                 >
                   <Phone size={16} className="mt-0.5 shrink-0 text-gold-600 group-hover:text-gold-400 transition-colors" />
                   +84 xxx xxx xxx
                 </a>
               </li>
               <li>
-                <div className="flex items-start gap-3 text-sm text-muted">
+                <div className="flex items-start gap-3 text-base text-white/55">
                   <MapPin size={16} className="mt-0.5 shrink-0 text-gold-600" />
                   Vietnam · US Market
                 </div>

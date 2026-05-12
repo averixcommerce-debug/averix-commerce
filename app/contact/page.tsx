@@ -57,7 +57,7 @@ export default function ContactPage() {
               <span className="text-white">Bắt Đầu</span><br />
               <span className="text-gold-gradient">Hành Trình</span>
             </h1>
-            <p className="text-base text-muted max-w-xl mx-auto">
+            <p className="text-lg md:text-xl text-white/60 max-w-xl mx-auto leading-relaxed">
               Đặt lịch tư vấn miễn phí. Chúng tôi sẽ phân tích cơ hội và đề xuất
               chiến lược phù hợp cho bạn trong vòng 24h.
             </p>
@@ -74,7 +74,7 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <ScrollReveal direction="left">
                 <h2 className="text-2xl font-black font-display text-gold-gradient mb-3">Liên hệ trực tiếp</h2>
-                <p className="text-sm text-muted mb-8 leading-relaxed">
+                <p className="text-base text-white/55 mb-8 leading-relaxed">
                   Tư vấn hoàn toàn miễn phí — không cam kết, không áp lực.
                   Chúng tôi chỉ nhận project khi chắc chắn tạo được giá trị thực.
                 </p>
@@ -104,7 +104,7 @@ export default function ContactPage() {
                   {['Phản hồi trong 24h', 'Tư vấn 100% miễn phí', 'Không áp lực mua hàng', '5+ năm kinh nghiệm'].map((item) => (
                     <div key={item} className="flex items-center gap-2 py-1.5">
                       <CheckCircle size={14} className="text-gold-500 shrink-0" />
-                      <span className="text-xs text-muted">{item}</span>
+                      <span className="text-sm text-white/60">{item}</span>
                     </div>
                   ))}
                 </div>

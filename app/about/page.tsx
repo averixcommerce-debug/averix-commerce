@@ -46,7 +46,7 @@ export default function AboutPage() {
               <span className="text-white">Apex meets</span><br />
               <span className="text-gold-gradient">The X Factor</span>
             </h1>
-            <p className="text-base md:text-lg text-muted max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
               Averix không phải một cái tên có sẵn trong từ điển — bởi vì chúng tôi
               không xây dựng công ty này để đi theo những định nghĩa cũ.
             </p>
@@ -79,7 +79,7 @@ export default function AboutPage() {
                       <Icon size={28} className="text-gold-500" />
                     </div>
                     <h3 className="text-xl font-bold font-display text-white mb-3">{v.title}</h3>
-                    <p className="text-sm text-muted leading-relaxed">{v.desc}</p>
+                    <p className="text-base text-white/55 leading-relaxed">{v.desc}</p>
                   </GlowCard>
                 </ScrollReveal>
               );

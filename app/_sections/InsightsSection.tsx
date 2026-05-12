@@ -64,7 +64,7 @@ export default function InsightsSection() {
                 <span className="text-white">Dữ Liệu Dẫn Lối</span><br />
                 <span className="text-gold-gradient">Tăng Trưởng</span>
               </h2>
-              <p className="text-white/50 text-base leading-relaxed mb-8">
+              <p className="text-white/50 text-lg leading-relaxed mb-8">
                 Chúng tôi không đoán mò — mọi quyết định đều dựa trên data.
                 Từ traffic analysis đến ROAS optimization, chúng tôi giúp brand của bạn
                 tăng trưởng bền vững và có thể đo lường được.
@@ -89,7 +89,7 @@ export default function InsightsSection() {
                           }}>
                           <Icon size={15} color={kpi.iconColor} strokeWidth={2} />
                         </div>
-                        <span className="text-xs text-white/40 leading-tight">{kpi.label}</span>
+                        <span className="text-sm text-white/40 leading-tight">{kpi.label}</span>
                       </div>
                       {/* Value */}
                       <p className="text-3xl font-black font-display"

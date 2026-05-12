@@ -101,8 +101,8 @@ export default function StatsSection() {
                     />
                   </div>
 
-                  <p className="font-bold text-white text-sm md:text-base mb-1">{stat.label}</p>
-                  <p className="text-xs text-white/40">{stat.sub}</p>
+                  <p className="font-bold text-white text-base md:text-lg mb-1">{stat.label}</p>
+                  <p className="text-sm text-white/40">{stat.sub}</p>
 
                   {/* Bottom accent bar */}
                   <div className={`absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r ${stat.accent} opacity-20 group-hover:opacity-70 transition-opacity duration-500`} />

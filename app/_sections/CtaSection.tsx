@@ -48,7 +48,7 @@ export default function CtaSection() {
             <span className="text-white"> cùng chúng tôi?</span>
           </h2>
 
-          <p className="text-base md:text-lg text-muted max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed">
             Đặt lịch tư vấn miễn phí với team Averix Commerce.
             Chúng tôi sẽ phân tích cơ hội và đề xuất chiến lược phù hợp
             cho thị trường của bạn.
@@ -72,7 +72,7 @@ export default function CtaSection() {
               '✅ Phản hồi trong 24h',
               '✅ 5+ năm kinh nghiệm',
             ].map((b) => (
-              <span key={b} className="text-sm text-muted/70">{b}</span>
+              <span key={b} className="text-[15px] font-medium text-white/60">{b}</span>
             ))}
           </div>
         </ScrollReveal>

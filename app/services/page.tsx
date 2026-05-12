@@ -43,7 +43,7 @@ export default function ServicesPage() {
               <span className="text-white">Giải Pháp</span><br />
               <span className="text-gold-gradient">Toàn Diện</span>
             </h1>
-            <p className="text-base md:text-lg text-muted max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
               Từ ý tưởng đến thương hiệu hoàn chỉnh — chúng tôi đồng hành
               trên toàn bộ hành trình xây dựng ecommerce của bạn.
             </p>
@@ -72,7 +72,7 @@ export default function ServicesPage() {
                     {p.step}
                   </span>
                   <h3 className="text-base font-bold text-white mb-2">{p.title}</h3>
-                  <p className="text-sm text-muted leading-relaxed">{p.desc}</p>
+                  <p className="text-base text-white/55 leading-relaxed">{p.desc}</p>
                   {/* connector */}
                   {i < process.length - 1 && (
                     <div className="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 text-gold-700/40 text-xl z-10">→</div>
@@ -97,7 +97,7 @@ export default function ServicesPage() {
               {includes.map((item) => (
                 <div key={item} className="flex items-center gap-3 p-4 rounded-xl bg-dark-800 border border-gold-700/20">
                   <CheckCircle size={18} className="text-gold-500 shrink-0" />
-                  <span className="text-sm text-white/80">{item}</span>
+                  <span className="text-base text-white/80">{item}</span>
                 </div>
               ))}
             </div>

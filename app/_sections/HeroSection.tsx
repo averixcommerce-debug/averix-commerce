@@ -116,7 +116,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="text-base md:text-lg text-muted max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-lg md:text-xl text-white/55 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
           Averix Commerce kết hợp{' '}
           <span className="text-gold-400 font-medium">sáng tạo</span>,{' '}
