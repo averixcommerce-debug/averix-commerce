@@ -13,7 +13,10 @@ const cases = [
       { label: 'Conversion Rate', value: '4.2%' },
     ],
     tags: ['Shopify', 'Facebook Ads', 'POD'],
-    gradient: 'from-gold-700/20 to-transparent',
+    iconBg: 'rgba(255,215,0,0.16)',
+    iconBorder: 'rgba(218,165,32,0.45)',
+    iconColor: '#ffd700',
+    accentColor: 'rgba(184,134,11,0.5)',
   },
   {
     icon: Package,
@@ -26,7 +29,10 @@ const cases = [
       { label: 'Reviews earned', value: '500+' },
     ],
     tags: ['Amazon', 'PPC', 'BSR'],
-    gradient: 'from-orange-700/15 to-transparent',
+    iconBg: 'rgba(251,146,60,0.15)',
+    iconBorder: 'rgba(251,146,60,0.4)',
+    iconColor: '#fb923c',
+    accentColor: 'rgba(234,88,12,0.5)',
   },
   {
     icon: TrendingUp,
@@ -39,7 +45,10 @@ const cases = [
       { label: 'Repeat Purchase Rate', value: '42%' },
     ],
     tags: ['Omnichannel', 'Email', 'Branding'],
-    gradient: 'from-gold-600/20 to-transparent',
+    iconBg: 'rgba(52,211,153,0.13)',
+    iconBorder: 'rgba(52,211,153,0.4)',
+    iconColor: '#34d399',
+    accentColor: 'rgba(5,150,105,0.5)',
   },
 ];
 
@@ -73,7 +82,8 @@ export default function CaseStudiesSection() {
                   hover:border-gold-500/40 transition-all duration-500 overflow-hidden
                   hover:shadow-[0_0_50px_rgba(255,215,0,0.08)] group`}>
                   {/* BG gradient */}
-                  <div className={`absolute inset-0 bg-gradient-to-b ${c.gradient} pointer-events-none`} />
+                  <div className="absolute inset-0 pointer-events-none"
+                    style={{ background: `linear-gradient(to bottom, ${c.accentColor}, transparent)` }} />
 
                   <div className="relative p-7">
                     {/* Top */}
@@ -84,8 +94,13 @@ export default function CaseStudiesSection() {
                         </span>
                         <h3 className="text-xl font-black text-white font-display">{c.brand}</h3>
                       </div>
-                      <div className="p-2.5 rounded-xl bg-gold-500/10 border border-gold-700/25">
-                        <Icon size={20} className="text-gold-500" />
+                      <div className="p-2.5 rounded-xl flex items-center justify-center"
+                        style={{
+                          background: c.iconBg,
+                          border: `1px solid ${c.iconBorder}`,
+                          boxShadow: `0 0 14px ${c.iconBg}`,
+                        }}>
+                        <Icon size={20} color={c.iconColor} strokeWidth={1.8} />
                       </div>
                     </div>
 

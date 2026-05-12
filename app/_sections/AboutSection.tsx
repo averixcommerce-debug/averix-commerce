@@ -10,24 +10,36 @@ const meanings = [
     letter: '"A"',
     title: 'Apex — Đỉnh Cao',
     desc: 'Tinh thần theo đuổi tiêu chuẩn cao nhất trong sản phẩm, sáng tạo và vận hành.',
+    iconBg: 'rgba(255,215,0,0.18)',
+    iconBorder: 'rgba(218,165,32,0.5)',
+    iconColor: '#ffd700',
   },
   {
     icon: Zap,
     letter: '"X"',
     title: 'The X Factor',
     desc: 'Yếu tố khác biệt giúp sản phẩm có khả năng chiến thắng trên thị trường.',
+    iconBg: 'rgba(251,191,36,0.18)',
+    iconBorder: 'rgba(251,191,36,0.5)',
+    iconColor: '#fbbf24',
   },
   {
     icon: Users,
     letter: 'Team',
     title: 'Đội Ngũ',
     desc: 'X Factor nằm ở cách đội ngũ kết hợp sáng tạo, insight khách hàng và dữ liệu.',
+    iconBg: 'rgba(167,139,250,0.15)',
+    iconBorder: 'rgba(167,139,250,0.45)',
+    iconColor: '#a78bfa',
   },
   {
     icon: Target,
     letter: 'Mission',
     title: 'Sứ Mệnh',
     desc: 'Biến ý tưởng thành sản phẩm có giá trị thật trên thị trường Mỹ.',
+    iconBg: 'rgba(52,211,153,0.13)',
+    iconBorder: 'rgba(52,211,153,0.4)',
+    iconColor: '#34d399',
   },
 ];
 
@@ -81,9 +93,14 @@ export default function AboutSection() {
                 const Icon = m.icon;
                 return (
                   <ScrollReveal key={m.title} direction="left" delay={i * 0.1}>
-                    <div className="flex gap-4 p-4 rounded-xl border border-gold-700/20 bg-dark-800/60 hover:border-gold-500/40 transition-all duration-300 group">
-                      <div className="shrink-0 w-10 h-10 rounded-lg bg-gold-500/10 border border-gold-700/30 flex items-center justify-center group-hover:bg-gold-500/20 transition-colors">
-                        <Icon size={18} className="text-gold-500" />
+                    <div className="flex gap-4 p-4 rounded-xl border border-white/6 bg-[#111] hover:border-gold-600/40 transition-all duration-300 group">
+                      <div className="shrink-0 w-11 h-11 rounded-xl flex items-center justify-center"
+                        style={{
+                          background: m.iconBg,
+                          border: `1px solid ${m.iconBorder}`,
+                          boxShadow: `0 0 12px ${m.iconBg}`,
+                        }}>
+                        <Icon size={19} color={m.iconColor} strokeWidth={1.8} />
                       </div>
                       <div>
                         <div className="flex items-center gap-2 mb-1">

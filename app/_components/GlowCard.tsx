@@ -6,12 +6,14 @@ interface GlowCardProps {
   children: ReactNode;
   className?: string;
   glowColor?: string;
+  style?: React.CSSProperties;
 }
 
 export default function GlowCard({
   children,
   className = '',
   glowColor = 'rgba(255, 215, 0, 0.15)',
+  style,
 }: GlowCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
   const glowRef = useRef<HTMLDivElement>(null);
@@ -51,7 +53,7 @@ export default function GlowCard({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className={`relative overflow-hidden transition-transform duration-300 ease-out ${className}`}
-      style={{ willChange: 'transform' }}
+      style={{ willChange: 'transform', ...style }}
     >
       {/* Mouse-tracking radial glow */}
       <div
